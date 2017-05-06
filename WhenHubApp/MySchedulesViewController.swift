@@ -18,6 +18,8 @@ class MySchedulesViewController: UITableViewController, WhenHubAPIDelegate, Sche
         let whenHubAPI = WhenHubAPI()
         whenHubAPI.delegate = self
         whenHubAPI.mySchedules()
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 30
     }
     
     func onSuccess(data: NSArray?) {
@@ -53,17 +55,17 @@ class MySchedulesViewController: UITableViewController, WhenHubAPIDelegate, Sche
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        if(customCell == nil) {
-//            customCell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath) as? ScheduleCell
-//        }
-//        
-//        let schedule = schedules[indexPath.row] as! Schedule
-//        customCell!.render(schedule: schedule)
-//        customCell!.lblDescription.preferredMaxLayoutWidth = self.tableView.bounds.width - 96
-//        customCell!.layoutIfNeeded()
-//        
-//        return customCell!.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
-        return UITableViewAutomaticDimension
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+////        if(customCell == nil) {
+////            customCell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath) as? ScheduleCell
+////        }
+////        
+////        let schedule = schedules[indexPath.row] as! Schedule
+////        customCell!.render(schedule: schedule)
+////        customCell!.lblDescription.preferredMaxLayoutWidth = self.tableView.bounds.width - 96
+////        customCell!.layoutIfNeeded()
+////        
+////        return customCell!.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+//        return 300.0
+//    }
 }

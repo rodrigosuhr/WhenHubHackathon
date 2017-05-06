@@ -17,10 +17,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="26Z-IE-o6n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.63921568630000003" green="0.83921568629999999" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.098039215686274508" green="0.090196078431372548" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.63921568627450975" green="0.83921568627450982" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.090196078431372548" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleCell" rowHeight="150" id="Ad2-ZU-ggN" customClass="ScheduleCell" customModule="WhenHubApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScheduleCell" rowHeight="150" id="Ad2-ZU-ggN" customClass="ScheduleCell" customModule="WhenHubApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ad2-ZU-ggN" id="mpS-ns-fux">
@@ -149,20 +149,32 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0es-XU-L4W">
                                                     <rect key="frame" x="12" y="84" width="264" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="W2G-sL-dzD"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="View events"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="onEvents:" destination="Ad2-ZU-ggN" eventType="touchUpInside" id="CbK-Qq-240"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pzd-y9-y6L">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pzd-y9-y6L">
                                                     <rect key="frame" x="12" y="12" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="6gn-ns-x8w"/>
                                                         <constraint firstAttribute="width" constant="60" id="ykc-7W-tdH"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrW-qh-1p0">
                                                     <rect key="frame" x="84" y="47" width="192" height="21"/>
@@ -171,7 +183,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.78520967279999998" green="1" blue="0.19084633840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="mrW-qh-1p0" firstAttribute="leading" secondItem="pzd-y9-y6L" secondAttribute="trailing" constant="12" id="3Mz-mK-JrP"/>
                                                 <constraint firstItem="mrW-qh-1p0" firstAttribute="top" secondItem="Opn-2X-5Bb" secondAttribute="bottom" constant="12" id="6M0-D4-PUE"/>
@@ -186,8 +198,14 @@
                                                 <constraint firstItem="0es-XU-L4W" firstAttribute="top" secondItem="mrW-qh-1p0" secondAttribute="bottom" constant="16" id="oFL-7m-FUm"/>
                                                 <constraint firstAttribute="trailing" secondItem="Opn-2X-5Bb" secondAttribute="trailing" constant="12" id="rUu-dn-857"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="hRS-Zp-dUe" firstAttribute="top" secondItem="mpS-ns-fux" secondAttribute="topMargin" constant="8" id="LDz-4r-2eF"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="hRS-Zp-dUe" secondAttribute="trailing" constant="8" id="gGF-ty-79H"/>
@@ -195,6 +213,7 @@
                                         <constraint firstItem="hRS-Zp-dUe" firstAttribute="leading" secondItem="mpS-ns-fux" secondAttribute="leadingMargin" constant="8" id="lVu-3q-MNx"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="imgIcon" destination="pzd-y9-y6L" id="EwY-mj-HrI"/>
                                     <outlet property="lblDescription" destination="mrW-qh-1p0" id="27o-om-sbG"/>
