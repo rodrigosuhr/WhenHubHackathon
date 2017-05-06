@@ -40,7 +40,7 @@ class MySchedulesViewController: UITableViewController, WhenHubAPIDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath) as! ScheduleCell
         let schedule = schedules[indexPath.row] as! Schedule
-        cell.lblTitle.text = schedule.name
+        cell.render(schedule: schedule)
 
         return cell
     }

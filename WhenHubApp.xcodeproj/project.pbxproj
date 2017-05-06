@@ -13,6 +13,7 @@
 		7B40D4D11EB69E3D00DBE4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B40D4D01EB69E3D00DBE4F7 /* Assets.xcassets */; };
 		7B40D4D41EB69E3D00DBE4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B40D4D21EB69E3D00DBE4F7 /* LaunchScreen.storyboard */; };
 		7B40D4DC1EB6A03800DBE4F7 /* WhenHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D4DB1EB6A03800DBE4F7 /* WhenHubAPI.swift */; };
+		7B7A8AA41EBDF66200A657F0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A8AA31EBDF66100A657F0 /* Event.swift */; };
 		7BB70A371EBCF1F700E807CD /* WhenHubAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB70A361EBCF1F700E807CD /* WhenHubAPIConstants.swift */; };
 		7BD4E2A11EBD1090000DDDA3 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4E2A01EBD1090000DDDA3 /* AlamofireImage.framework */; };
 		7BD4E2A31EBD1A1C000DDDA3 /* MySchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4E2A21EBD1A1C000DDDA3 /* MySchedulesViewController.swift */; };
@@ -30,6 +31,7 @@
 		7B40D4D31EB69E3D00DBE4F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B40D4D51EB69E3D00DBE4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B40D4DB1EB6A03800DBE4F7 /* WhenHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhenHubAPI.swift; sourceTree = "<group>"; };
+		7B7A8AA31EBDF66100A657F0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7BB70A361EBCF1F700E807CD /* WhenHubAPIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhenHubAPIConstants.swift; sourceTree = "<group>"; };
 		7BD4E2A01EBD1090000DDDA3 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../Library/Developer/Xcode/DerivedData/WhenHubApp-asewozuapbqesvdnnfxcpxllarps/Build/Products/Debug-iphoneos/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
 		7BD4E2A21EBD1A1C000DDDA3 /* MySchedulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySchedulesViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				7BD4E2A21EBD1A1C000DDDA3 /* MySchedulesViewController.swift */,
 				7BD4E2A41EBD2944000DDDA3 /* Schedule.swift */,
 				7BD4E2A61EBD305A000DDDA3 /* ScheduleCell.swift */,
+				7B7A8AA31EBDF66100A657F0 /* Event.swift */,
 			);
 			path = WhenHubApp;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7A8AA41EBDF66200A657F0 /* Event.swift in Sources */,
 				7BD4E2A51EBD2944000DDDA3 /* Schedule.swift in Sources */,
 				7BB70A371EBCF1F700E807CD /* WhenHubAPIConstants.swift in Sources */,
 				7BD4E2A31EBD1A1C000DDDA3 /* MySchedulesViewController.swift in Sources */,

@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ScheduleCell: UITableViewCell {
+class ScheduleCell: UITableViewCell, WhenHubAPIDelegate {
     @IBOutlet weak var lblTitle: UILabel!
+    var schedule: Schedule?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func render(schedule: Schedule) {
+        self.schedule = schedule
+        lblTitle.text = schedule.name
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func onEvents(_ sender: Any) {
+        let whenHubAPI = WhenHubAPI()
+        whenHubAPI.delegate = self
+        whenHubAPI.myEvents(scheduleId: schedule!.id!)
     }
-
+    
+    func onSuccess(data: NSArray?) {
+        print(data)
+    }
+    
+    func onError(message: String) {
+        
+    }
 }
