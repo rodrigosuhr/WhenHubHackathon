@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import AlamofireImage
+
+protocol ScheduleCellDelegate: class {
+    func onEvents(data: NSArray?)
+}
 
 class ScheduleCell: UITableViewCell, WhenHubAPIDelegate {
-    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var imgIcon: UIImageView!
+    
+    weak var delegate:ScheduleCellDelegate?
     var schedule: Schedule?
     
     func render(schedule: Schedule) {
         self.schedule = schedule
-        lblTitle.text = schedule.name
+        lblName.text = schedule.name
+        lblDescription.text = schedule.description
+        let url = NSURL(string: schedule.icon!)! as URL
+        imgIcon.af_setImage(withURL: url)
     }
 
     @IBAction func onEvents(_ sender: Any) {
@@ -24,10 +36,9 @@ class ScheduleCell: UITableViewCell, WhenHubAPIDelegate {
     }
     
     func onSuccess(data: NSArray?) {
-        print(data)
+        delegate?.onEvents(data: data)
     }
     
     func onError(message: String) {
-        
     }
 }

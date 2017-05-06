@@ -19,6 +19,8 @@
 		7BD4E2A31EBD1A1C000DDDA3 /* MySchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4E2A21EBD1A1C000DDDA3 /* MySchedulesViewController.swift */; };
 		7BD4E2A51EBD2944000DDDA3 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4E2A41EBD2944000DDDA3 /* Schedule.swift */; };
 		7BD4E2A71EBD305A000DDDA3 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4E2A61EBD305A000DDDA3 /* ScheduleCell.swift */; };
+		7BF4B3451EBE209B00C2DD69 /* MyEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF4B3441EBE209B00C2DD69 /* MyEventsViewController.swift */; };
+		7BF4B3471EBE211500C2DD69 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF4B3461EBE211500C2DD69 /* EventCell.swift */; };
 		82A8B4B1055B40E89967C442 /* Pods_WhenHubApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8603F3ABF8E708DAEF72DA2 /* Pods_WhenHubApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		7BD4E2A21EBD1A1C000DDDA3 /* MySchedulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySchedulesViewController.swift; sourceTree = "<group>"; };
 		7BD4E2A41EBD2944000DDDA3 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		7BD4E2A61EBD305A000DDDA3 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		7BF4B3441EBE209B00C2DD69 /* MyEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEventsViewController.swift; sourceTree = "<group>"; };
+		7BF4B3461EBE211500C2DD69 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		82561F89404EE58FD75B735D /* Pods-WhenHubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhenHubApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhenHubApp/Pods-WhenHubApp.release.xcconfig"; sourceTree = "<group>"; };
 		C0D3D75F51A37A0CD034657A /* Pods-WhenHubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhenHubApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhenHubApp/Pods-WhenHubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F8603F3ABF8E708DAEF72DA2 /* Pods_WhenHubApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhenHubApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,8 @@
 				7BD4E2A41EBD2944000DDDA3 /* Schedule.swift */,
 				7BD4E2A61EBD305A000DDDA3 /* ScheduleCell.swift */,
 				7B7A8AA31EBDF66100A657F0 /* Event.swift */,
+				7BF4B3441EBE209B00C2DD69 /* MyEventsViewController.swift */,
+				7BF4B3461EBE211500C2DD69 /* EventCell.swift */,
 			);
 			path = WhenHubApp;
 			sourceTree = "<group>";
@@ -236,8 +242,10 @@
 			files = (
 				7B7A8AA41EBDF66200A657F0 /* Event.swift in Sources */,
 				7BD4E2A51EBD2944000DDDA3 /* Schedule.swift in Sources */,
+				7BF4B3471EBE211500C2DD69 /* EventCell.swift in Sources */,
 				7BB70A371EBCF1F700E807CD /* WhenHubAPIConstants.swift in Sources */,
 				7BD4E2A31EBD1A1C000DDDA3 /* MySchedulesViewController.swift in Sources */,
+				7BF4B3451EBE209B00C2DD69 /* MyEventsViewController.swift in Sources */,
 				7BD4E2A71EBD305A000DDDA3 /* ScheduleCell.swift in Sources */,
 				7B40D4CC1EB69E3D00DBE4F7 /* ViewController.swift in Sources */,
 				7B40D4DC1EB6A03800DBE4F7 /* WhenHubAPI.swift in Sources */,

@@ -8,6 +8,5 @@ target 'WhenHubApp' do
   # Pods for WhenHubApp
   pod 'Alamofire', '~> 4.3'
   pod 'AlamofireImage', '~> 3.1'
-  pod 'FoldingCell', '~> 2.0.3'
 
 end
