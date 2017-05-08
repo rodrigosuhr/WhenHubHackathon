@@ -9,5 +9,5 @@
 import Foundation
 
 class WhenHubAPIConstants {
-    static let ACCESS_TOKEN = "AYD71vZtyttBjAFCgptOAbUH85o2oqHBTvslD83GYjHc2oeNgRypJy9FGXY3ziZ6"
+    static let ACCESS_TOKEN = "Qm896kVEninkqGXiqjBBR6EXsJakTalwm8o44walhulAvy7uj8oQZdbnlMCbDfxJ"
 }

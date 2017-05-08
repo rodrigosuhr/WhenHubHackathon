@@ -68,6 +68,7 @@ class WhenHubAPI {
                 let data: NSMutableArray = []
                 let json = response.result.value as! NSDictionary
                 let events = json.value(forKey: "events") as! NSArray
+                let eventsIds: NSMutableArray = []
                 var id: String?
                 var name: String?
                 var description: String?
@@ -76,30 +77,35 @@ class WhenHubAPI {
                 var image: String?
                 var startDate: NSDictionary?
                 var link: NSDictionary?
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM"
                 
                 for event in events as! [NSDictionary] {
-                    id = event.value(forKey: "id") as? String
-                    name = event.value(forKey: "name") as? String
-                    description = event.value(forKey: "description") as? String
-                    order = event.value(forKey: "order") as? Int
-                    media = event.value(forKey: "media") as? NSArray
-                    startDate = event.value(forKey: "when") as? NSDictionary
-                    link = event.value(forKey: "primaryAction") as? NSDictionary
-                    
-                    for md in media as! [NSDictionary] {
-                        if (md.value(forKey: "type") as! String == "image") {
-                            image = md.value(forKey: "url") as? String
+                    if (!eventsIds.contains(event.value(forKey: "id") as! String)) {
+                        eventsIds.add(event.value(forKey: "id") as! String)
+                        id = event.value(forKey: "id") as? String
+                        name = event.value(forKey: "name") as? String
+                        description = event.value(forKey: "description") as? String
+                        order = event.value(forKey: "order") as? Int
+                        media = event.value(forKey: "media") as? NSArray
+                        startDate = event.value(forKey: "when") as? NSDictionary
+                        link = event.value(forKey: "primaryAction") as? NSDictionary
+                        
+                        for md in media as! [NSDictionary] {
+                            if (md.value(forKey: "type") as! String == "image") {
+                                image = md.value(forKey: "url") as? String
+                            }
                         }
+                        
+                        data.add(Event(id: id,
+                                       scheduleId: scheduleId,
+                                       name: name,
+                                       description: description,
+                                       order: order,
+                                       image: image,
+                                       startDate: dateFormatter.date(from: (startDate!.value(forKey: "startDate")! as! String))! as NSDate,
+                                       link: link?.value(forKey: "url") as? String))
                     }
-                    
-                    data.add(Event(id: id,
-                                   scheduleId: scheduleId,
-                                   name: name,
-                                   description: description,
-                                   order: order,
-                                   image: image,
-                                   startDate: startDate?.value(forKey: "startDate") as? String,
-                                   link: link?.value(forKey: "url") as? String))
                 }
                 
                 self.delegate?.onSuccess(data: data)

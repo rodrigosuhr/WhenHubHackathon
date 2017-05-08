@@ -32,7 +32,7 @@ class MySchedulesViewController: UITableViewController, WhenHubAPIDelegate, Sche
     
     func onEvents(data: NSArray?) {
         let myEventsVC = self.storyboard?.instantiateViewController(withIdentifier: "MyEventsViewController") as! MyEventsViewController
-        myEventsVC.events = data!
+        myEventsVC.events = data!.sorted(by: { ($0 as! Event).startDate!.compare(($1 as! Event).startDate! as Date) == .orderedDescending }) as NSArray
         self.navigationController?.pushViewController(myEventsVC, animated: true)
     }
 
@@ -54,18 +54,4 @@ class MySchedulesViewController: UITableViewController, WhenHubAPIDelegate, Sche
 
         return cell
     }
-    
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-////        if(customCell == nil) {
-////            customCell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath) as? ScheduleCell
-////        }
-////        
-////        let schedule = schedules[indexPath.row] as! Schedule
-////        customCell!.render(schedule: schedule)
-////        customCell!.lblDescription.preferredMaxLayoutWidth = self.tableView.bounds.width - 96
-////        customCell!.layoutIfNeeded()
-////        
-////        return customCell!.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
-//        return 300.0
-//    }
 }

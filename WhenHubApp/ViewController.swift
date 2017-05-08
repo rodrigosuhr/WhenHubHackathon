@@ -39,6 +39,7 @@ class ViewController: UIViewController, WhenHubAPIDelegate {
     }
     
     func onError(message: String) {
+        aiLoading.isHidden = true
         lblLoadingMessage.text = message
     }
 }

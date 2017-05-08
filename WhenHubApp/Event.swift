@@ -15,10 +15,10 @@ class Event {
     var description: String?
     var order: Int?
     var image: String?
-    var startDate: String?
+    var startDate: NSDate?
     var link: String?
     
-    init(id: String?, scheduleId: String?, name: String?, description: String?, order: Int?, image: String?, startDate: String?, link: String?) {
+    init(id: String?, scheduleId: String?, name: String?, description: String?, order: Int?, image: String?, startDate: NSDate?, link: String?) {
         self.id = id
         self.scheduleId = scheduleId
         self.name = name

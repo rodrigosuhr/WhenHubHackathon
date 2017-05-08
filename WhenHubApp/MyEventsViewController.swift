@@ -18,6 +18,8 @@ class MyEventsViewController: UITableViewController {
         if (events.count > 0) {
             lblNoEvents.removeFromSuperview()
         }
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 30
     }
 
     // MARK: - Table view data source

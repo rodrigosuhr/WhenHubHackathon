@@ -14,6 +14,7 @@
 		7B40D4D41EB69E3D00DBE4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B40D4D21EB69E3D00DBE4F7 /* LaunchScreen.storyboard */; };
 		7B40D4DC1EB6A03800DBE4F7 /* WhenHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D4DB1EB6A03800DBE4F7 /* WhenHubAPI.swift */; };
 		7B7A8AA41EBDF66200A657F0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A8AA31EBDF66100A657F0 /* Event.swift */; };
+		7BB34C671EC0B9C900583ABC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB34C661EC0B9C900583ABC /* MapKit.framework */; };
 		7BB70A371EBCF1F700E807CD /* WhenHubAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB70A361EBCF1F700E807CD /* WhenHubAPIConstants.swift */; };
 		7BD4E2A11EBD1090000DDDA3 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4E2A01EBD1090000DDDA3 /* AlamofireImage.framework */; };
 		7BD4E2A31EBD1A1C000DDDA3 /* MySchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4E2A21EBD1A1C000DDDA3 /* MySchedulesViewController.swift */; };
@@ -34,6 +35,7 @@
 		7B40D4D51EB69E3D00DBE4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B40D4DB1EB6A03800DBE4F7 /* WhenHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhenHubAPI.swift; sourceTree = "<group>"; };
 		7B7A8AA31EBDF66100A657F0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7BB34C661EC0B9C900583ABC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7BB70A361EBCF1F700E807CD /* WhenHubAPIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhenHubAPIConstants.swift; sourceTree = "<group>"; };
 		7BD4E2A01EBD1090000DDDA3 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../Library/Developer/Xcode/DerivedData/WhenHubApp-asewozuapbqesvdnnfxcpxllarps/Build/Products/Debug-iphoneos/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
 		7BD4E2A21EBD1A1C000DDDA3 /* MySchedulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySchedulesViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB34C671EC0B9C900583ABC /* MapKit.framework in Frameworks */,
 				7BD4E2A11EBD1090000DDDA3 /* AlamofireImage.framework in Frameworks */,
 				82A8B4B1055B40E89967C442 /* Pods_WhenHubApp.framework in Frameworks */,
 			);
@@ -110,6 +113,7 @@
 		DA0864F94B03B20657C2C411 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BB34C661EC0B9C900583ABC /* MapKit.framework */,
 				7BD4E2A01EBD1090000DDDA3 /* AlamofireImage.framework */,
 				F8603F3ABF8E708DAEF72DA2 /* Pods_WhenHubApp.framework */,
 			);
