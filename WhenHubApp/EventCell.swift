@@ -22,6 +22,7 @@ class EventCell: UITableViewCell {
         self.event = event
         lblTitle.text = event.name
         imgImage.af_setImage(withURL: NSURL(string: event.image!)! as URL)
+        // TODO: get the Event's location coordinates to use in this url
         let mapUrl: String = "https://maps.google.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&sensor=false"
         imgMap.af_setImage(withURL: NSURL(string: mapUrl)! as URL)
         let dateFormatter = DateFormatter()
